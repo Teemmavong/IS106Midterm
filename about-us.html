@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>About Us</title>
+    <script type="text/javascirpt" src="./js/login.js"></script>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+            position: relative;
+        }
+
+        body,
+        html {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        h2 {
+            font-size: 18px;
+            font-weight: 100vh;
+            background-color: #9BC1BC;
+        }
+
+        .box-shadow {
+            -webkit-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0, 0.75);
+            -moz-box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0, 0.75);
+            box-shadow: -1px 7px 23px -10px rgba(0, 0, 0, 0, 0.75)
+        }
+
+        .main-container-grid {
+            display: grid;
+            grid-template-rows: 1fr 13fr 1fr;
+            height: 100%;
+            grid-row-gap: 1em;
+        }
+
+        .r1,
+        .r3 {
+            height: 50px;
+            background-color: #CCC;
+            padding: 1em;
+            align-items: center;
+        }
+
+        .r3 {
+            text-align: center;
+        }
+
+        .r2 {
+            height: 100%;
+            background-color: #f1f1f1;
+        }
+
+        .three-column {
+            display: grid;
+            grid-template-columns: 2fr 8fr 3fr;
+            background-color: #FFF;
+        }
+
+        .c1 {
+            min-width: 200px;
+        }
+
+        .c1,
+        .c3 {
+            background-color: #CCC;
+        }
+
+        .txt-center {
+            text-align: center;
+            margin: 15px auto 0px;
+            border-bottom: 1px solid black;
+            padding-bottom: 15px;
+        }
+
+        .left-nav {
+            list-style-type: none;
+        }
+
+        .left-nav>li>a {
+            display: block;
+            padding: 15px 0px 15px 30px;
+            background-color: #CCC;
+            font-weight: bold;
+            text-decoration: none;
+            transition-duration: 0.7s;
+        }
+
+        .left-nav>li>a:hover {
+            background-color: #F4F1BB;
+        }
+
+        .c2 {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            /* grid-template-rows: 1fr 1fr 1fr; */
+            grid-auto-rows: min-content;
+            background-color: #9BC1BC;
+        }
+
+        .h2-content {
+            grid-column: 1 / 5;
+            height: 22px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .c2>img {
+            width: 100px;
+            align-self: center;
+        }
+    </style>
+</head>
+
+<body class="main-container-grid">
+    <div class="r1">
+        <h2 class="txt-center">Nathan Thammavong</h2>
+        <img class="box-shadow" src="./img/sm_logo.jpg">
+    </div>
+    <div class="r2 three-column">
+        <div class="c1 box-shadow">
+            <h2 class="txt-center">Navigation</h2>
+            <ul class="left-nav">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./about-us.html">About</a></li>
+                <li><a href="./contact-us.html">contact</a></li>
+                <li><a href="./login.html">login</a></li>
+            </ul>
+        </div>
+        <div class="c2">
+            <h2 class="txt-center h2-content">About Us</h2>
+            <p style="color: #E6EBE0">It probably seemed trivial to most people, but it mattered to Tracey. She wasn't
+                sure why it mattered so much to her, but she understood deep within her being that it mattered to her.
+                So for the 365th day in a row, Tracey sat down to eat pancakes for breakfast.
+                It seemed like it should have been so simple. There was nothing inherently difficult with getting the
+                project done. It was simple and straightforward enough that even a child should have been able to
+                complete it on time, but that wasn't the case. The deadline had arrived and the project remained
+                unfinished.
+                The river slowly meandered through the open space. It had hidden secrets that it didn't want to reveal.
+                It had a well-planned strategy to appear calm, inviting, and appealing. That's how the river lured her
+                unknowing victims to her water's edge.</p>
+                <img class="box-shadow" src="./img/sm_logo.jpg">
+        </div>
+    </div>
+    <div class="c3">
+        <h2 class="txt-center"></h2>
+    </div>
+    </div>
+    <div class="r3">
+        Copyright 2021 - Created by Nathan Thammavong
+    </div>
+</body>
+
+</html>
